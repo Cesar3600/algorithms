@@ -1,19 +1,23 @@
-/* const powerOfTwo = (n:number):boolean => {
-  return !(n & (n-1))
-} */
 
-const powerOfTwo = (n:number):boolean => {
-
-  if(n <= 0){
+const powerOfTwo = (num:number) => {
+  if(num <= 0){
     return false
   }
 
-  while(n%2===0){
-    n/=2
+  while(num%2 === 0){
+    num/=2
   }
 
-  return n === 1
-
+  if(num !== 1){
+    return false
+  }
+  return true
 }
 
-console.log(powerOfTwo(16))
+console.log(powerOfTwo(4))
+
+// 2^2 => 4
+// 2^3 => 8
+// 2^4 => 16
+// 2^5 => 32
+
