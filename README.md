@@ -1,7 +1,7 @@
 ### ALGORITHMS
 
 
-### RECURSION
+## RECURSION
 Es una tecnica de resolucion de provlbmeas donde la solucion depende de solucionar pequenas instancias del mismo problema.
 
 recursion es cuando una funcion se llama  asi mismo
@@ -14,7 +14,7 @@ es una gran tecnica para simplificar tu solucion
 si tu encuentras dividiendo el proble4ma en versiones mas pequenas del mismo problema, la recursividad es muy util
 
 
-### ALGUNOS PUNTOS SOBRE RECURSION
+## ALGUNOS PUNTOS SOBRE RECURSION
 
 cada solucion recursiva necesita tener un caso base, una condicion para terminar la recursividad.
 
@@ -26,7 +26,7 @@ recursion no es sencillo de entender. no te rindas si luchas por entender el con
 dont give up!! 
 
 
-### LA SECUENCIA FIBONACCI RECURSIVA
+## LA SECUENCIA FIBONACCI RECURSIVA
 
 1. descubre como romper el problema en pequenas versiones del mismo problema.
 
@@ -50,3 +50,38 @@ function recursiveFibonacci(num:number):number{
 3. vuelve  a llamar a la funcion con el valor n reducido en 1 y luego en 2 par asumarlos
  4. Esto funciona pero para valores pequenos, es ineficiente para numeros grandes
  
+## LA RECURSIVIDAD APLICADA AL FACTORIAL DE UN NUMERO
+
+1. podemos pensar en que:
+5! = 5 x !(5 - 1)  |  5 x !4
+4! = 4 x !(4 - 1)  |  4 x !3
+3! = 3 x !(3 - 1)  |  3 x !2
+2! = 2 x !(2 - 1)  |  2 x !1
+1! = 1 x !(1 - 1)  |  1 x !0
+0! = 1
+
+por lo tanto: 
+
+>[!NOTE]
+>
+>!n = n * !(n-1)
+
+
+El codigo para la factorial recursivo seria:
+
+```
+const recursiveFactorial = (num:number):number => {
+  if(num === 0){
+    return 1;
+  }
+  return num * recursiveFactorial2(num - 1);
+}
+```
+
+
+>[!IMPORTANT]
+>
+>es complejidad de tiempo lineal: 
+>
+>Big-O = O(n)
+>
