@@ -1,4 +1,4 @@
-### ALGORITHMS
+# **ALGORITHMS**
 
 
 ## RECURSION
@@ -9,21 +9,26 @@ recursion es cuando una funcion se llama  asi mismo
 
 por que?
 
-es una gran tecnica para simplificar tu solucion
+1. es una gran tecnica para simplificar tu solucion
 
-si tu encuentras dividiendo el proble4ma en versiones mas pequenas del mismo problema, la recursividad es muy util
+2. si tu encuentras dividiendo el proble4ma en versiones mas pequenas del mismo problema, la recursividad es muy util
+
+
+***
 
 
 ## ALGUNOS PUNTOS SOBRE RECURSION
 
-cada solucion recursiva necesita tener un caso base, una condicion para terminar la recursividad.
+1. cada solucion recursiva necesita tener un caso base, una condicion para terminar la recursividad.
 
 
-Recursion puede simplificar la solucion de un problema pero esto no siempre se traduce en na solucion rapida, uns solucion recursiva podria ser peor compardada con una solucion iterativa
+2. Recursion puede simplificar la solucion de un problema pero esto no siempre se traduce en na solucion rapida, uns solucion recursiva podria ser peor compardada con una solucion iterativa
 
 
-recursion no es sencillo de entender. no te rindas si luchas por entender el concepto.
+3. recursion no es sencillo de entender. no te rindas si luchas por entender el concepto.
 dont give up!! 
+
+
 
 
 ## LA SECUENCIA FIBONACCI RECURSIVA
@@ -31,7 +36,6 @@ dont give up!!
 1. descubre como romper el problema en pequenas versiones del mismo problema.
 
 2. identifica el caso base para recusividad
-
 
 
 para la resolucion de un numero finonacci utilizando recursividad esta no es apropiada para poder resolverla.
@@ -49,7 +53,10 @@ function recursiveFibonacci(num:number):number{
 2. si num es menor a 2, o sea si es 0 o 1 entonces devuelve sus valores.
 3. vuelve  a llamar a la funcion con el valor n reducido en 1 y luego en 2 par asumarlos
  4. Esto funciona pero para valores pequenos, es ineficiente para numeros grandes
- 
+
+
+
+
 ## LA RECURSIVIDAD APLICADA AL FACTORIAL DE UN NUMERO
 
 1. podemos pensar en que:
@@ -85,3 +92,36 @@ const recursiveFactorial = (num:number):number => {
 >
 >Big-O = O(n)
 >
+
+
+
+## BUSQUEDA LINEAL
+
+
+```
+const linearSearch = (arr:number[],el:number):number => {
+  
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === el){
+      return i
+    }
+  }
+
+  return -1
+}
+```
+
+>[!INFO]
+>## BIG-O GUIDE
+>Calculando la no dependencia en el tam,ano del input -O(1)
+> 1. loop -O(n)
+> 2. nested loops -(n^2)
+>
+>El tamano del input reducido por la mitad -O(logn) 
+
+
+En este caso seria:
+
+Big-O = O(n)
+
+
