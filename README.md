@@ -29,6 +29,7 @@ por que?
 dont give up!! 
 
 
+***
 
 
 ## LA SECUENCIA FIBONACCI RECURSIVA
@@ -55,6 +56,7 @@ function recursiveFibonacci(num:number):number{
  4. Esto funciona pero para valores pequenos, es ineficiente para numeros grandes
 
 
+***
 
 
 ## LA RECURSIVIDAD APLICADA AL FACTORIAL DE UN NUMERO
@@ -94,6 +96,8 @@ const recursiveFactorial = (num:number):number => {
 >
 
 
+***
+
 
 ## BUSQUEDA LINEAL
 
@@ -124,4 +128,26 @@ En este caso seria:
 
 Big-O = O(n)
 
+
+***
+
+
+## bynary search
+
+problema: dado un arreglo de n elementos y un objetivo llamado t, encuentra el index de t en el arreglo. regresa -1 si el elemento objetivo no se ha encontrado.
+
+```
+arr = [-5,2,4,6,10], t = 10 -> deberia retornar 4
+arr = [-5,2,4,6,10], t = 6 -> deberia retornar 3
+arr = [-5,2,4,6,10], t = 20 -> deberia retornar -1
+```
+
+### ---bynary search pseudocode---
+reglas
+1. si el array es vacio regresa -1 por que no encontro igun elemento.
+2. si el arreglo tene elementos, encuentra el elemento medio en el array. Si el objetivo es  igual al elemento medio regresa el index del elemento medio.
+3. si el objetivo es menor que el elemento medio entonces la busqueda binaria la realizara en la mitad izquierda del arreglo.
+4. Si el objetivo es mayor que el elemento medio entonces la busqueda binaria la hara en la mitad derecha del arreglo.
+
+***
 
