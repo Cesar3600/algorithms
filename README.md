@@ -115,7 +115,7 @@ const linearSearch = (arr:number[],el:number):number => {
 }
 ```
 
->[!INFO]
+>[!NOTE]
 >## BIG-O GUIDE
 >Calculando la no dependencia en el tamano del input -O(1)
 > 1. loop -O(n)
@@ -179,7 +179,7 @@ const binarySearch = (arr:number[],target:number):number => {
 
 ```
 
->[!INFO]
+>[!TIP]
 >## BIG-O GUIDE
 >Calculando la no dependencia en el tamano del input -O(1)
 > 1. loop -O(n)
@@ -191,3 +191,5 @@ const binarySearch = (arr:number[],target:number):number => {
 En este caso seria:
 
 Big-O = O(log n)
+
+***
