@@ -179,7 +179,7 @@ const binarySearch = (arr:number[],target:number):number => {
 
 ```
 
->[!TIP]
+>[!IMPORTANT]
 >## BIG-O GUIDE
 >Calculando la no dependencia en el tamano del input -O(1)
 > 1. loop -O(n)
