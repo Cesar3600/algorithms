@@ -117,7 +117,7 @@ const linearSearch = (arr:number[],el:number):number => {
 
 >[!INFO]
 >## BIG-O GUIDE
->Calculando la no dependencia en el tam,ano del input -O(1)
+>Calculando la no dependencia en el tamano del input -O(1)
 > 1. loop -O(n)
 > 2. nested loops -(n^2)
 >
@@ -151,3 +151,43 @@ reglas
 
 ***
 
+## bynary search solution
+codigo search. La idea de este codigo es que se defina el valor medio de un arreglo ordenado ascendente. y en base a ese valor comparar si el numero buscado es mayor o menor. 
+
+```
+const binarySearch = (arr:number[],target:number):number => {
+
+  let leftIndex = 0;
+  let rightIndex = arr.length - 1;
+
+  while(leftIndex <= rightIndex){
+    let middleIndex = Math.floor((leftIndex + rightIndex)/2);
+    
+    if(target === arr[middleIndex]){
+      return middleIndex
+    }
+
+    if(target < arr[middleIndex]){
+      rightIndex = middleIndex - 1;
+    }else{
+      leftIndex = middleIndex + 1;
+    }
+  }
+  return -1
+
+}
+
+```
+
+>[!INFO]
+>## BIG-O GUIDE
+>Calculando la no dependencia en el tamano del input -O(1)
+> 1. loop -O(n)
+> 2. nested loops -(n^2)
+>
+>El tamano del input reducido por la mitad -O(log n) 
+
+
+En este caso seria:
+
+Big-O = O(log n)
