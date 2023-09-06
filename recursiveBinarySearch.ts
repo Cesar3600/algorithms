@@ -1,5 +1,5 @@
 
-const search = (arr:number[],target:number,leftIndex:number,rightIndex:number):any => {
+const search = (arr:number[],target:number,leftIndex:number,rightIndex:number):number => {
   if(leftIndex > rightIndex){
     return -1
   }
