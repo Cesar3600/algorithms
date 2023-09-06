@@ -149,7 +149,9 @@ reglas
 3. si el objetivo es menor que el elemento medio entonces la busqueda binaria la realizara en la mitad izquierda del arreglo.
 4. Si el objetivo es mayor que el elemento medio entonces la busqueda binaria la hara en la mitad derecha del arreglo.
 
+
 ***
+
 
 ## bynary search solution
 codigo search. La idea de este codigo es que se defina el valor medio de un arreglo ordenado ascendente. y en base a ese valor comparar si el numero buscado es mayor o menor. 
@@ -192,6 +194,7 @@ En este caso seria:
 
 Big-O = O(log n)
 
+
 ***
 
 
@@ -228,4 +231,95 @@ function recursiveBinarySearch (arr: number[], target: number): any {
 >4. si target es mayor a valor de middleIndex entonces el valor index inicial es una vez mayor al middleIndex y el index final se mantiene.
 >5. En caso contrario, si el target es menor al valor del middleIndex entonces el valor inicial del index se mantiene y el valor del index final es igual a middleIndex - 1
 
+
 ***
+
+
+## SORTING ALGORITHMS
+
+Es importante saber ordenar en proyectos de programacion
+aqui trataremos de ordenar numeros mediante los siguiente algoritmos:
+
+a. Bubble Sort
+b. Insertion Sort
+c. Quick Sort
+d. Merge Sort
+
+
+***
+
+
+## BUBBLE SORT
+PROBLEMA: ordenar uyn arreglo de numeros enteros 
+
+> [!IMPORTANT]
+> const arr = [ -6, 20, 8, -2, 4 ]
+> bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
+
+
+### BUBBLE SORT IDEA
+Comparar elementos adjacentes en el arreglo e intercambiar poisciones si no estan en la posicion deseada.
+Repetir las instrucciones mientras se avanza en el array.
+Una vez que se  recorre todo el arreglo y no se producen cambios, entonces el arreglo esta ordenado.
+
+
+### COMO TRABAJA BUBBLE SORT
+
+> [!IMPORTANT]
+> ## compara pares de numeros empezando desde la izquierda:
+>
+> [ -6, 20, 8, -2, 4 ] -> compara -6 y 20
+> [ -6, 8, 20, -2, 4 ] -> compara 8 y 20
+> [ -6, 8, -2, 20, 4 ] -> 
+> [ -6, 8, -2, 4, 20 ] ->
+> [ -6, 8, -2, 4, 20 ] ->
+> [ -6, -2, 8, 4, 20 ] -> 
+> [ -6, -2, 4, 8, 20 ] ->
+>
+
+
+***
+
+## BUBBLE SORT SOLUTION
+
+
+```
+const bubbleSort = (arrNumbers:number[]):number[] => {
+  let swapped:boolean
+  do{
+    swapped = false
+    for(let i = 0; i < arrNumbers.length - 1; i++ ){
+      if(arrNumbers[i] > arrNumbers[i+1]){
+        let temp = arrNumbers[i];
+        arrNumbers[i]   =  arrNumbers[i+1]
+        arrNumbers[i+1] =  temp
+        swapped = true
+      }
+    }
+  }while(swapped)
+
+  return arrNumbers
+}
+
+```
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
