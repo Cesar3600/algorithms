@@ -1,5 +1,31 @@
 # **ALGORITHMS**
 
+## PRIME NUMBER
+El numero primo es un numero natural mayor a 1 que no es un producto de 2 pequenos numeros naturales.
+
+>[!IMPORTANT]
+>### Concepto: ###
+>isPrime(5) = true( 1*5 or 5*1 )
+>isPrime(4) = true( 1*4 or 2*2 or 4*1 )
+>
+ 
+
+```
+const prime  = (num:number):boolean => {
+  if(num < 2){
+    return false
+  }
+
+  for(let i = 2 ; i < num  ; i++){
+    if(num%i===0){
+      return false
+    } 
+  }
+  return true
+}
+```
+
+
 
 ## RECURSION
 Es una tecnica de resolucion de provlbmeas donde la solucion depende de solucionar pequenas instancias del mismo problema.
@@ -303,16 +329,37 @@ const bubbleSort = (arrNumbers:number[]):number[] => {
 
 ```
 
+> [!INFO]
+>
+> Big-O = O(n^2)
+>
 
 
+***
 
 
+## INSERTION SORT
+problema: toma run arreglo de enteros, ordena el arreglo.
 
+const arr = [ -6, 20, 8, -2, 4 ]
+bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
  
 
+### INSERTION SORT IDEA
 
+1. dividimos el arreglo en una parte ordenada y una parte sin ordenar.
 
+2. supongamos que el primer elemento ya esta ordenado y los demas elementos no lo estan.
 
+3. Seleccionar un elemento de la parte desordenada y compararla con la parte ordenada.
+
+4. Los elementos  de la parte ordenada es menor que el elemento seleccionado se pasara al siguiente elemento de la parte desordenada.
+
+5. En caso contraio, mover los elementos grandes en la parte ordenada hacia la derecha.
+
+6. insertar el elemento seleccionado en el indice derecho.
+
+7. repetir hasta que todos los elementos desordenados esten colocados en el orden correcto.
 
 
 

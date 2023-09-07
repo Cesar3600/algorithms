@@ -79,3 +79,36 @@ const fibonacci = (num:number):number[] => {
 
 
 console.log(fibonacci(6))
+
+
+////////////////////////////////////////////
+
+
+const sort = (arr:number[]) => {
+  let swapped:boolean
+  do{
+    swapped=false
+    for(let i = 0; i < arr.length -1;i++){
+      if(arr[i]> arr[i+1]){
+        let temp = arr[i]
+        arr[i] = arr[i+1]
+        arr[i+1] = temp
+        swapped=true
+      }
+    }
+
+  }while(swapped)
+  return arr
+}
+
+
+console.log(sort([-3,-56,0,12,77,2]))
+
+
+
+
+
+
+
+
+
