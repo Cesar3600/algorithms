@@ -138,6 +138,7 @@ console.log(powerOfTwo(5))
 //numero primo
  
 const prime  = (num:number):boolean => {
+
   if(num < 2){
     return false
   }
