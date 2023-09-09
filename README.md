@@ -329,7 +329,7 @@ const bubbleSort = (arrNumbers:number[]):number[] => {
 
 ```
 
-> [!INFO]
+> [!NOTE]
 >
 > Big-O = O(n^2)
 >
@@ -362,7 +362,7 @@ bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
 7. repetir hasta que todos los elementos desordenados esten colocados en el orden correcto.
 
 
->[!INFO]
+>[!NOTE]
 > ejemplo de orden por insercion  
 
 
@@ -378,44 +378,5 @@ bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
 
 
 ## 
-
-
-
->[!NOTE]
-> lorem
-
->[!TIP]
-> lorem
-
->[!IMPORTANT]
-> lorem
-
->[!CAUTION]
-> lorem
-
->[!WARNING]
-> lorem
-
->[!ADMINISTRATION]
-> lorem
-
->[!AVAILABILITY]
-> lorem
-
->[!PREREQUISITES]
-> lorem
-
->[!ERROR]
-> lorem
-
->[!ADMINISTRATION]
-> lorem
-
->[!INFO]
-> lorem
-
->[!SUCCESS]
-> lorem
-
 
 
