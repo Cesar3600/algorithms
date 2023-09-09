@@ -382,17 +382,40 @@ bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
 
 
 >[!NOTE]
+> lorem
+
 >[!TIP]
+> lorem
+
 >[!IMPORTANT]
+> lorem
+
 >[!CAUTION]
+> lorem
+
 >[!WARNING]
+> lorem
+
 >[!ADMINISTRATION]
+> lorem
+
 >[!AVAILABILITY]
+> lorem
+
 >[!PREREQUISITES]
+> lorem
+
 >[!ERROR]
+> lorem
+
 >[!ADMINISTRATION]
+> lorem
+
 >[!INFO]
+> lorem
+
 >[!SUCCESS]
+> lorem
 
 
 
