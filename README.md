@@ -364,15 +364,15 @@ bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
 
 >[!NOTE]
 > ejemplo de orden por insercion  
-
-
-| [ -6 **(20)** 8 -2 4 ] | NTI = 20 | SE = -6 | -6 > 20 ? NO, colocar el 2 a la derecha de -6 |
-| :--------------------- | :------- | :------ | :-------------------------------------------- |
-| [ -6 20 **(8)** -2 4 ] | NTI = 8  | SE = 20 | 20 > 8  ? SI, desplazar el 20 a la derecha    |   
-| [ -6 20 20 **(-2)** 4] | NTI = 8  | SE = -6 | -6 > 8  ? NO, colocar 8 a la derecha de -6    |   
-| [ -6 8 20 **(-2)** 4 ] | NTI = -2 | SE = 20 | 20 > -2 ? SI, colocar el 20 a la derecha      |   
-| [ -6 8 20 20 **(4)** ] | NTI = -2 | SE = 8  | 8  > -2 ? SI, desplazar 8 a la derecha        |   
-| [ -6 8 8 20 **(4)**  ] | NTI = -2 | SE = -6 | -6 > 2  ? NO, colocar -2 a la derecha de -6   |
+> 
+> 
+> | [ -6 **(20)** 8 -2 4 ] | NTI = 20 | SE = -6 | -6 > 20 ? NO, colocar el 2 a la derecha de -6 |
+> | :--------------------- | :------- | :------ | :-------------------------------------------- |
+> | [ -6 20 **(8)** -2 4 ] | NTI = 8  | SE = 20 | 20 > 8  ? SI, desplazar el 20 a la derecha    |   
+> | [ -6 20 20 **(-2)** 4] | NTI = 8  | SE = -6 | -6 > 8  ? NO, colocar 8 a la derecha de -6    |   
+> | [ -6 8 20 **(-2)** 4 ] | NTI = -2 | SE = 20 | 20 > -2 ? SI, colocar el 20 a la derecha      |   
+> | [ -6 8 20 20 **(4)** ] | NTI = -2 | SE = 8  | 8  > -2 ? SI, desplazar 8 a la derecha        |   
+> | [ -6 8 8 20 **(4)**  ] | NTI = -2 | SE = -6 | -6 > 2  ? NO, colocar -2 a la derecha de -6   |
 
 ***
 
