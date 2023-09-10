@@ -10,7 +10,7 @@ El numero primo es un numero natural mayor a 1 que no es un producto de 2 pequen
 >
  
 
-```
+```js
 const prime  = (num:number):boolean => {
   if(num < 2){
     return false
@@ -67,7 +67,7 @@ dont give up!!
 
 para la resolucion de un numero finonacci utilizando recursividad esta no es apropiada para poder resolverla.
 
-```
+```js
 function recursiveFibonacci(num:number):number{
   if(num < 2 && num >= 0){
     return num
@@ -104,7 +104,7 @@ por lo tanto:
 
 El codigo para la factorial recursivo seria:
 
-```
+```js
 const recursiveFactorial = (num:number):number => {
   if(num === 0){
     return 1;
@@ -128,7 +128,7 @@ const recursiveFactorial = (num:number):number => {
 ## BUSQUEDA LINEAL
 
 
-```
+```js
 const linearSearch = (arr:number[],el:number):number => {
   
   for(let i = 0; i < arr.length; i++){
@@ -182,7 +182,7 @@ reglas
 ## bynary search solution
 codigo search. La idea de este codigo es que se defina el valor medio de un arreglo ordenado ascendente. y en base a ese valor comparar si el numero buscado es mayor o menor. 
 
-```
+```js
 const binarySearch = (arr:number[],target:number):number => {
 
   let leftIndex = 0;
@@ -226,7 +226,7 @@ Big-O = O(log n)
 
 ## RECURSIVE BINARY SEARCH
 
-```
+```js
 function search (arr:number[],target:number,leftIndex:number,rightIndex:number):any {
   if(leftIndex > rightIndex){
     return -1
