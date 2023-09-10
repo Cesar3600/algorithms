@@ -309,7 +309,7 @@ Una vez que se  recorre todo el arreglo y no se producen cambios, entonces el ar
 ## BUBBLE SORT SOLUTION
 
 
-```
+```js
 const bubbleSort = (arrNumbers:number[]):number[] => {
   let swapped:boolean
   do{
@@ -377,6 +377,8 @@ bubbleSort(arr) => debera retornar [ -6, -2, 4, 8, 20 ]
 ***
 
 
-## 
+## INSERTION SORT SOLUTION
+
+
 
 
